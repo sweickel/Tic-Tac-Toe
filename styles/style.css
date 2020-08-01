@@ -1,51 +1,94 @@
 body {
-	font-family: helvetica, sansserif;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  font-family: helvetica, sansserif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(60, 122, 255);
 }
 
 .nav-wrapper {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	height: 130px;
-	background-color: gray;
-	color: white;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	box-shadow: 2px 2px 2px black;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 130px;
+  background-color: black;
+  opacity: 50%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 2px 2px 2px black;
+}
+
+#new {
+  font-size: 20px;
+  margin: 20px;
 }
 
 h1 {
-	position: relative;
-	font-size: 45px;
-	text-align: center;
-	text-shadow: 3px 3px 3px black;
+  position: relative;
+  font-size: 45px;
+  text-align: center;
+  text-shadow: 3px 3px 3px black;
+}
+
+h2 {
+  font-size: 35px;
+  margin: 0px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .board {
-	position: relative;
-	display: grid;
-	grid-template-columns: 133px 133px 133px;
-	grid-template-rows: 133px 133px 133px;
-	align-items: center;
-	text-align: center;
-	font-size: 80px;
-	margin: 20px;
-	width: 400px;
-	height: 400px;
-	background-color: beige;
-	border: 1px solid black;
-	background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fspacecoding.files.wordpress.com%2F2013%2F07%2Femptyboard.png&f=1&nofb=1");
+  position: relative;
+  display: grid;
+  grid-template-columns: 133px 133px 133px;
+  grid-template-rows: 133px 133px 133px;
+  align-items: center;
+  text-align: center;
+  font-size: 80px;
+  margin: 20px;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid black;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fspacecoding.files.wordpress.com%2F2013%2F07%2Femptyboard.png&f=1&nofb=1");
 }
 
-marker {
-	position: relative;
-	
+.marker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 133px;
+  height: 133px;
 }
 
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
+.nameplate {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px;
+  width: 100px;
+  padding: 15px;
+}
 
+.current {
+  border-bottom: 5px solid rgb(255, 81, 0);
+}
