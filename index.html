@@ -13,22 +13,41 @@
       <h1>Tic-Tac-Toe</h1>
     </nav>
 
-    <button type="button" id="new">New Game</button>
-
-    <div id="main">
-      <div class="nameplate">
-        <h2>x</h2>
-        <h3 id="one">Player One</h3>
-      </div>
-
-      <div class="board-wrapper">
-        <div class="board"></div>
-      </div>
-
-      <div class="nameplate">
-        <h2>o</h2>
-        <h3 id="two">Player Two</h3>
+    <div class="btn-wrapper">
+      <button type="button" id="new">New Game</button>
+      <div id="modal">
+        <p>Enter your name</p>
+        <div id="text-wrapper">
+          <form class="inputForm">
+            <input
+              id="name"
+              name="name"
+              type="text"
+              minlength="1"
+              required
+              placeholder="Player One"
+            />
+          </form>
+          <button type="button" id="submit">Enter</button>
+        </div>
       </div>
     </div>
+
+    <div id="main" class="main">
+      <div class="nameplate" id="plateA">
+        <h2>x</h2>
+        <h3 id="one"></h3>
+      </div>
+
+      <span class="board-wrapper">
+        <div class="board"></div>
+      </span>
+
+      <div class="nameplate" id="plateB">
+        <h2>o</h2>
+        <h3 id="two"></h3>
+      </div>
+    </div>
+    <p id="winText"></p>
   </body>
 </html>
